@@ -26,7 +26,7 @@ Copy the .jar file from the ../target directory into the ../web-container/webapp
 
 ## Usage
 
-The node uses KBAs defined in a user's profile by the user self-service module. Enable the self-service module and allow a user to register one or questions during registration or in their profile page. This node will then pick a random question from the profile and prompt for the answer. The node outcome is either true or false depending on the users response.
+Once build and installed, place the appropriate nodes in the authentication flow. The YubiCloud service requires an API client and key, which can be created on the [Yubico API Signup](https://upgrade.yubico.com/getapikey/) page. Each node also requires a writeable LDAP attribute to contain the Yubikey's public ID.
 
 ## To Build
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following [ForgeRock Knowledge Base Article](https://backstage.forgerock.com/knowledge/kb/article/a74096897).

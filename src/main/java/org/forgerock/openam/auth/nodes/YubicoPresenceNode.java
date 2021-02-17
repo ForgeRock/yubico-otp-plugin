@@ -11,13 +11,8 @@
  * Header, with the fields enclosed by brackets [] replaced by your own identifying
  * information: "Portions copyright [year] [name of copyright owner]".
  *
- * Copyright 2017 ForgeRock AS.
- */
-/**
- * jon.knight@forgerock.com
- *
- * A node that returns true if the user's email address is recorded as breached by the HaveIBeenPwned website (http://haveibeenpwned.com)
- * or false if no breach has been recorded
+ * Portions copyright 2017 ForgeRock AS.
+ * Portions copyright 2018 Matthew Ehle.
  */
 
 
@@ -39,7 +34,7 @@ import static org.forgerock.openam.auth.node.api.SharedStateConstants.USERNAME;
 
 
 /**
-* A KBA node. Asks a random question from self-service KBA questions in user profile.
+* Registered Yubikey presence node. Detects whether a user has already registered their Yubikey.
 *
 */
 @Node.Metadata(outcomeProvider = AbstractDecisionNode.OutcomeProvider.class,
